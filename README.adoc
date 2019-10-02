@@ -1,0 +1,9 @@
+= Simple Processor Using Functions
+
+Demonstrate how functions make life so much easier when writing and testing
+Spring Cloud Stream Apps.
+
+== Build
+```
+mvn clean install
+```
