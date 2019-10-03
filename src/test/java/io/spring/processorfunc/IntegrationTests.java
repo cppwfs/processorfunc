@@ -16,18 +16,19 @@
 
 package io.spring.processorfunc;
 
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
 
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.WebApplicationType;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.stream.binder.test.InputDestination;
 import org.springframework.cloud.stream.binder.test.OutputDestination;
 import org.springframework.cloud.stream.binder.test.TestChannelBinderConfiguration;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.integration.support.MessageBuilder;
 import org.springframework.messaging.Message;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class IntegrationTests {
 
@@ -50,7 +51,7 @@ public class IntegrationTests {
 			inputDestination.send(inputMessage);
 
 			Message<byte[]> outputMessage = outputDestination.receive();
-			assertEquals("6789".getBytes(), outputMessage.getPayload());
+			assertThat(outputMessage.getPayload()).isEqualTo("6789".getBytes());
 
 		}
 	}

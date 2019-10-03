@@ -38,12 +38,12 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-stream-test-support</artifactId>
-			<version>3.0.0.BUILD-SNAPSHOT</version>
-			<scope>test</scope>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.springframework.cloud</groupId> -->
+<!-- 			<artifactId>spring-cloud-stream-test-support</artifactId> -->
+<!-- 			<version>3.0.0.BUILD-SNAPSHOT</version> -->
+<!-- 			<scope>test</scope> -->
+<!-- 		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-stream</artifactId>
@@ -52,11 +52,11 @@
 			<scope>test</scope>
 			<classifier>test-binder</classifier>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-stream-binder-rabbit</artifactId>
-			<version>3.0.0.BUILD-SNAPSHOT</version>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.springframework.cloud</groupId> -->
+<!-- 			<artifactId>spring-cloud-stream-binder-rabbit</artifactId> -->
+<!-- 			<version>3.0.0.BUILD-SNAPSHOT</version> -->
+<!-- 		</dependency> -->
 	</dependencies>
 
 	<dependencyManagement>

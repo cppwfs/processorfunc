@@ -18,10 +18,10 @@ package io.spring.processorfunc;
 
 import java.util.function.Function;
 
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
-@Configuration
+@EnableAutoConfiguration
 public class ProcessorConfiguration {
 	@Bean
 	public Function<String, String> shorten() {
